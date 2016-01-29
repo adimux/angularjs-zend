@@ -10,7 +10,7 @@ So add it in your list of dependencies :
     var myApp = angular.module("myApp", [..., "zend"] );
 
 Then configure it :
-
+```javascript
     myApp.config(function(zendUrl) {
         zendUrl.setBaseUrl("http://mybackend.com/zendApplication/"); // Base url of the zend app
         // Set the hierarchy of your zend app. Modules > controllers > actions
@@ -26,10 +26,11 @@ Then configure it :
             }
         });
     }
+```
 
 Then use it !
 Example :
-
+```javascript
     myApp.controller(function productsController($scope, zendUrl) {
         $scope.fetchProducts = function() {
             $http.get(zendUrl({module:"ecommerce", controller:"products", action:"get"})).then(
@@ -39,4 +40,4 @@ Example :
                 });
             }
         });
-        
+```
