@@ -21,7 +21,7 @@ Then configure it :
     	        "public": [],
             }
             "ecommerce", {
-                "products":["get", "remove", edit"],
+                "products":["get", "remove", "edit"],
                 "games":["get", "add"],
             }
         });
