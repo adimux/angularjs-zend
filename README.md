@@ -7,7 +7,9 @@ AngularJS services/providers/factories useful with a Zend PHP back-end
 The module to inject as a dependency is **"zend"**
 So add it in your list of dependencies :
 
-    var myApp = angular.module("myApp", [..., "zend"] );
+```javascript
+var myApp = angular.module("myApp", [..., "zend"] );
+```
 
 Then configure it :
 ```javascript
